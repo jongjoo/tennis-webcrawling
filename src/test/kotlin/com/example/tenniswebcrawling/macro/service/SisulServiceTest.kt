@@ -11,6 +11,12 @@ class SisulServiceTest {
     @Autowired
     private lateinit var sisulService: SisulService
 
+
+    @Test
+    fun run(){
+        sisulService.run()
+    }
+
     @Test
     fun availableTime(){
         sisulService.availableTime()

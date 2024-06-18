@@ -12,8 +12,18 @@ class SlackServiceTest {
     private lateinit var slackService: SlackService
 
     @Test
+    fun startMsg() {
+        slackService.startMsg()
+    }
+
+    @Test
+    fun workingMsg() {
+        slackService.workingMsg()
+    }
+
+    @Test
     fun sendMsg() {
-        slackService.sendMsg("")
+        slackService.sendMsg("테스트")
     }
 
 }
